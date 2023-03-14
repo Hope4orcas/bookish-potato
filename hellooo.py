@@ -3,7 +3,7 @@ import requests
 import json
 
 if st.button("Generate meme"):
-  url="https://meme-api.com/gimme/wholesomememes"
+  url="https://www.reddit.com/r/cats/"
   response = requests.get(url)
   data = json.loads(response.text)
   meme = (data["url"])
